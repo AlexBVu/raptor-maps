@@ -1,6 +1,12 @@
-def main():
-    print("Hello from raptor-maps!")
+# 11/19/26
+# Alex Vu
+# api.py
 
+from fastapi import FastAPI
+from parser import getInfo
 
-if __name__ == "__main__":
-    main()
+app = FastAPI()
+
+@app.get("/getentries")
+async def getentries():
+    return getInfo()
