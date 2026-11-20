@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Raptor Maps</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div style="text-align: center;">
+        <h1> Want to Query Raptor Maps?</h1>
+        <h3> Input the amount and choose from the categories </h3>
+    </div>
+    <div style="text-align: center;">
+        <input id="amount" type="number" placeholder="5">
+        <select id="category" name="category">
+            <option value="No-Anomaly">No-Anomaly</option>
+            <option value="Cell">Cell</option>
+            <option value="Hot-Spot">Hot-Spot</option>
+        </select>
+        <button id="Go">Go</button>
+    </div>
+    <pre id="output"></pre>
+    <script src="index.js"></script>
+  </body>
+</html>
