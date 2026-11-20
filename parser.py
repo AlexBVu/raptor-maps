@@ -23,7 +23,13 @@ def getByClass(n : int, category : str):
     with open(JSON_FILE) as json_data:
         data = json.load(json_data)
 
-    return dict(islice(data.items(), int(n)))
+    res = []
+
+    for key, val in data.items():
+        if len(res) == n:
+            return res
+        if val["anomaly_class"] == category:
+            res.append((key, val))
 
 def getInfo() -> None:
     with open(JSON_FILE) as json_data:
