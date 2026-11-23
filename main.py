@@ -2,6 +2,7 @@
 # Alex Vu
 # api.py
 
+import utils.session
 from fastapi import FastAPI
 from parser import getFirstN, getByClass
 from fastapi.middleware.cors import CORSMiddleware
